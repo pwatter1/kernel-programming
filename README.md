@@ -1,4 +1,4 @@
-# kernel-programming - CS350 Kernel Assignment
+# CS350 Kernel Assignment
 
 ## Part A: Installing, configuring, and compiling Linux Kernel 4.4.1
 

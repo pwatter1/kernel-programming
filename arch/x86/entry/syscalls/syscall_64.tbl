@@ -332,7 +332,7 @@
 323	common	userfaultfd		sys_userfaultfd
 324	common	membarrier		sys_membarrier
 325	common	mlock2			sys_mlock2
-326     common 	check_time		sys_check_time
+326     common 	my_xtime		my_xtime
 #
 # x32-specific system call numbers start at 512 to avoid cache impact
 # for native 64-bit operation.

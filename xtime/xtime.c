@@ -6,7 +6,7 @@
 #include <linux/signal.h>
 
 
-asmlinkage int sys_my_xtime(struct timespec *current_time) 
+asmlinkage long sys_my_xtime(struct timespec *current_time) 
 {
 	// verify user memspace
 	// VERIFY_WRITE tests both writable and readable
@@ -30,4 +30,3 @@ asmlinkage int sys_my_xtime(struct timespec *current_time)
 	return 0;
 }
 
-//EXPORT_SYMBOL(sys_my_xtime);

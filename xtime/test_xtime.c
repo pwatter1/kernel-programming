@@ -8,11 +8,12 @@ int main(void)
 {
 	struct timespec ts;
 	int retVal;
-
 	retVal = syscall(326, &ts);
-	printf("Function return value: %d \n
-		Errno number: %d \n
-		Time: %ld\n", 
-		retVal, errno, ts.tv_sec*1000000000UL + ts.tv_nsec);
+
+	printf("Function return value: %d \nErrno number: %d \nTime: %ld\n", 
+		retVal, 
+		errno, 
+		ts.tv_sec*1000000000UL + ts.tv_nsec);
+	
 	return 0;
 }

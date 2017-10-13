@@ -28,6 +28,5 @@ asmlinkage long my_xtime(struct timespec *current_time) {
 	if (copy_to_user(current_time, %time, sizeof(time)) != 0) {
 		return -EFAULT;
 	}
-
 	return 0;
 }

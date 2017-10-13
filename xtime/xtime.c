@@ -6,24 +6,20 @@
 #include <linux/signal.h>
 
 
-asmlinkage long sys_my_xtime(struct timespec *current_time) 
+asmlinkage int sys_my_xtime(struct timespec *current_time) 
 {
-	// verify user memoryspace
-	if (!access_ok(VERIFY_READ, current_time, sizeof(current_time))) {
-		printk(KERN_ERR "failed to verify user memoryspace in xtime()\n");
-		return -EFAULT;
-	}
+	// verify user memspace
+	// VERIFY_WRITE tests both writable and readable
 	if (!access_ok(VERIFY_WRITE, current_time, sizeof(current_time))) {
-                printk(KERN_ERR "failed to verify user memoryspace in xtime()\n");
+                printk(KERN_ERR "access_ok() failed in xtime()\n");
 		return -EFAULT;
         }
 
 	struct timespec ts;
-	// do_gettimeofday(&tv);
 	ts = current_kernel_time();	
 
 	if (copy_to_user(current_time, &ts, sizeof(ts)) != 0) {
-		printk(KERN_ERR "copy_to_user faild in xtime()\n");
+		printk(KERN_ERR "copy_to_user() failed in xtime()\n");
 		return -EFAULT;
 	}
 
@@ -34,4 +30,4 @@ asmlinkage long sys_my_xtime(struct timespec *current_time)
 	return 0;
 }
 
-EXPORT_SYMBOL(sys_my_xtime);
+//EXPORT_SYMBOL(sys_my_xtime);

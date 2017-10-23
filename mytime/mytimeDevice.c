@@ -38,14 +38,16 @@ static ssize_t read(struct file *fptr, char __user *user_buffer, size_t count, l
 		return -EFAULT;
 	}
 
-	buffer = sprintf("current_kernel_time: %ld %ld\n getnstimeofday: %ld %ld\n", time1a, time1b, time2a, time2b);	
+	sprintf("current_kernel_time: %ld %ld\ngetnstimeofday: %ld %ld\n", time1a, time1b, time2a, time2b);	
+	printk(KERN_NOTICE "current_kernel_time: %ld %ld\ngetnstimeofday: %ld %ld\n", time1a, time1b, time2a, time2b);
 	
 	if (copy_to_user(user_buffer, buffer, strlen(buffer)+1) != 0) {
 		printk(KERN_ERR "copy_to_user() failed in mytimeCharDriver\n");
 		return -EFAULT;
 	}
 	
-	printk(KERN_NOTICE "current_kernel_time: %ld %ld\n getnstimeofday: %ld %ld\n", time1a, time1b, time2a, time2b);
+	kfree(buffer);	
+
 	return 0;
 }
 

@@ -18,20 +18,26 @@ static int majorNumber = 0;
 static const char device_name[] = "mytimeDevice";
 static struct class* mytimeCharDeviceClass = NULL;
 static struct device* mytimeCharDevice = NULL;
-// static struct file_operations simple_fops = { .owner = THIS_MODULE, .read = read, };
 
 static ssize_t read(struct file *fptr, char __user *user_buffer, size_t count, loff_t *position)
 {
 	struct timespec ts1, ts2;
+	
 	getnstimeofday(&ts1);	
 	ts2 = current_kernel_time();
 	
-	long int time1a = ts1.tv_sec * 1000000000UL;
+	long int time1a = ts1.tv_sec;
 	long int time1b = ts1.tv_nsec;
-	long int time2a = ts2.tv_sec * 1000000000UL;
+	long int time2a = ts2.tv_sec;
 	long int time2b = ts2.tv_nsec;
 
-	char* buffer = vmalloc(256);
+	char* buffer = kzalloc(count, GFP_KERNEL);
+		
+	if (!access_ok(VERIFY_WRITE, user_buffer, count)) {
+		printk(KERN_ERR "access_ok() faile din mytimeCharDevice()\n");
+		return -EFAULT;
+	}
+
 	buffer = sprintf("current_kernel_time: %ld %ld\n getnstimeofday: %ld %ld\n", time1a, time1b, time2a, time2b);	
 	
 	if (copy_to_user(user_buffer, buffer, strlen(buffer)+1) != 0) {

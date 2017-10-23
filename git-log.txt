@@ -1,0 +1,289 @@
+commit ab0070be8169af87a4974cb9a5d7a8cb91cc0b2c
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sun Oct 22 22:52:58 2017 -0400
+
+    renaming rand dir
+
+commit fccb2604bab3845b91aaeb709ee45090d7961561
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 22:51:35 2017 -0400
+
+    Delete mytimeDevice.c
+
+commit 447c1bf846cd76acd9df3ff3bc1c9c4f81a52129
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 22:51:26 2017 -0400
+
+    Delete charDevice.c
+
+commit fe449eb1f8e38f131b5ba291cac9a7fd02fcf9e8
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 22:50:58 2017 -0400
+
+    formatting
+
+commit 9b359ee4a152296faec2e7fa2b0e452c40c726bd
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 22:50:00 2017 -0400
+
+    Rename charDevice.c to tutorialDevice.c
+
+commit 7079bbdae37b214c5bd1eef3bebadd1da9b7f88b
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sun Oct 22 22:49:08 2017 -0400
+
+    updating journal
+
+commit d2fd6247029f449242c7c9941bb3d20bf02defda
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 21:52:02 2017 -0400
+
+    formatting in readme
+
+commit 8199feab74972a4b79f8bafbf21e1a113125b80a
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 21:50:59 2017 -0400
+
+    Update README.md
+
+commit 3330feec4a952e8c20bf3c36d6143c20b30c128c
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 21:48:57 2017 -0400
+
+    Update README.md
+
+commit 186e0fc3a93428ff5f64acfb62154ac21d2f65e8
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Sun Oct 22 21:47:58 2017 -0400
+
+    Update README.md
+
+commit 7be0d7b69b7e545e9b54894ecbce52d7440aa821
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sun Oct 22 21:46:42 2017 -0400
+
+    showing sample output
+
+commit c962bfe38f46987cfdd2b34ce38b73937a35462b
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sun Oct 22 21:44:48 2017 -0400
+
+    moved user app over from other folder, added readme
+
+commit 50f24174195c9b198c103a77d2cf342fb473438e
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sun Oct 22 21:38:26 2017 -0400
+
+    moved around prints and buffer, memory allocation
+
+commit 360d50ed248e02a5dadfe6ccbd8e02e9dfcf04a6
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sun Oct 22 21:34:52 2017 -0400
+
+    organizing file structure and added the makefile
+
+commit caa77db80385db4aa700d7b01040156cb29dadef
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sun Oct 22 21:33:20 2017 -0400
+
+    checking if access_ok()
+
+commit 38c9da652d1ebd12d643b9975349f04f59d0a034
+Merge: f859ee3 dbcb3d0
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sat Oct 21 21:02:30 2017 -0400
+
+    Merge branch 'master' of https://github.com/pwatter1/kernel-programming
+    
+    isdf
+
+commit f859ee34d125ce74e9742b59665b847638e7de5b
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Sat Oct 21 21:02:18 2017 -0400
+
+    have device up and in proc & dev, working on user app
+
+commit dbcb3d0f117db352c096694d1fb7cbcc35628458
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Fri Oct 20 22:31:53 2017 -0400
+
+    Delete test_xtime.c
+
+commit 7637444690b8ba4172afa7cff6872246f0acb7b7
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Fri Oct 20 22:31:41 2017 -0400
+
+    Delete xtime.c
+
+commit 898a9d3d2b9a1b622391b5fe81bc97b48fcd8818
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 19 12:15:33 2017 -0400
+
+    added read functions, beginning debugging
+
+commit b2da9ae601f6c6768d45a9619d9a972bec52fd60
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 19 10:20:46 2017 -0400
+
+    device driver barebones
+
+commit 6e4ad5b9706c796e9e1cabc2ad01950bf8831a1e
+Merge: 5bf296d 00e25ec
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Wed Oct 18 00:04:17 2017 -0400
+
+    Merge branch 'master' of https://github.com/pwatter1/kernel-programming
+    
+    Merging
+
+commit 5bf296df05769e8eb6c78e81ad580057e233bfdb
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Wed Oct 18 00:04:07 2017 -0400
+
+    testing out compiling and logging device driver mod
+
+commit 00e25ec34607150a5906f62e17c3ce2bb3fa7bc5
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Thu Oct 12 23:02:45 2017 -0400
+
+    upload kernel makefile
+
+commit 5e2c1141ac8306a9ad6711c6678ee6bd3bad9609
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Thu Oct 12 22:54:38 2017 -0400
+
+    Delete my_xtime.c
+
+commit 62cd325684055f2d2968961c9fa2859f9c75cb0d
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 22:53:04 2017 -0400
+
+    final commit to xtime(), finished with assn
+
+commit eef492db108b7a2ebd6e5cb8f66085dd6e359d36
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 22:51:39 2017 -0400
+
+    final commit to xtime(), finished with assn
+
+commit d6d6dc034a9e1a90f409ab4e85743d8addae97e5
+Merge: c6c8ea2 b5b3d30
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 22:49:47 2017 -0400
+
+    Merge branch 'master' of https://github.com/pwatter1/kernel-programming
+    
+    isdf
+    wq
+    asdf
+
+commit c6c8ea275744783dda7a3c0c5992f088891c587f
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 22:49:32 2017 -0400
+
+    final commit to test userside xtime()
+
+commit b5b3d300ecc65308a5217d2713c3bddeb2c6ced5
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Thu Oct 12 22:38:44 2017 -0400
+
+    old draft of my_xtime
+
+commit f676ed48d15d2dee8ce7142139722ce821809615
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 22:35:41 2017 -0400
+
+    finished with retVal
+
+commit eda6038d67beeb8333318665428cebfc8b890717
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 22:29:22 2017 -0400
+
+    error checking user interface
+
+commit a424bc1da3d2b83435e6164463075afc8a3addc0
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 15:48:12 2017 -0400
+
+    testing/debugging userinteface
+
+commit b9f2be4ce0174426c77c353a44d30b777b89ecc3
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 14:46:47 2017 -0400
+
+    tsting xtime() with getkerneltime
+
+commit 987a69b52d89c40bdcf0e0f0331ce31516decfe8
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 14:15:11 2017 -0400
+
+    xtime()
+
+commit ffdd49678b8bb8c011d7a305059336c0048ce02f
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 14:07:35 2017 -0400
+
+    updating syscalls.h for func name change
+
+commit 89ac6f79f5d75cdfdbbb692ba40920e969614500
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Thu Oct 12 14:06:46 2017 -0400
+
+    need func name as my_xtime not xtime
+
+commit 3e34f9ec77e1a87179863e356d5edf49f32ee9dc
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Fri Oct 6 19:39:56 2017 -0400
+
+    adding my_xtime() to syscall tbl
+
+commit 1ec00a45dc5305a20939c462dd0c93b055e705b0
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Fri Oct 6 19:39:09 2017 -0400
+
+    prototype for my_xtime()
+
+commit b5fd1a53da737b8db0328441ac596401fdf32bce
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Fri Oct 6 18:57:53 2017 -0400
+
+    added sys_check_time() to syscalltbl
+
+commit 6ec069d014dc152741579dbf6e46c643ce5690da
+Merge: c9c5fcf 6d02728
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Fri Oct 6 18:54:45 2017 -0400
+
+    Merge branch 'master' of https://github.com/pwatter1/kernel-programming
+    
+    Initial setup, merge.
+
+commit c9c5fcf5621eb8589e6bc015464ab4f564974186
+Author: root <root@CS350-pwatter1.csvb.local>
+Date:   Fri Oct 6 18:53:55 2017 -0400
+
+    adding prototype for checktime()
+
+commit 6d02728348bcb6e75bd35a6d4d30ddbed1ebc814
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Tue Oct 3 13:51:44 2017 -0400
+
+    write example_makefile
+
+commit 02e095980aee432db1a05f77db690fe8ae28d463
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Tue Oct 3 13:41:47 2017 -0400
+
+    Update README.md
+
+commit 9a49cf5c05dca798a449d8516647816e9f3c8911
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Tue Oct 3 13:41:22 2017 -0400
+
+    Update README.md
+
+commit 3458129877a618d20b2da56a5f913aeea5bb9468
+Author: Patrick S. Watters <pwatters@ups.com>
+Date:   Tue Oct 3 13:36:22 2017 -0400
+
+    Initial commit

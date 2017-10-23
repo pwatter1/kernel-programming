@@ -5,13 +5,13 @@ Assn: Assn2 Part C
 Files changed: mytimeDevice.c Makefile README.md testCharDevice.c
 
 Sample output of ./test:
------------------------------------------
-KERNEL:
+
+KERNEL:\n
 current_kernel_time: 1508723133 925681398
-getnstimeofday: 1508723133 921561957
+getnstimeofday: 1508723133 921561957 \n
 USERSPACE:
 gettimeofday: 1508723133 925641000
------------------------------------------
+
 KERNEL:
 current_kernel_time: 1508723133 926725604
 getnstimeofday: 1508723133 921561957

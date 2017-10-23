@@ -6,10 +6,10 @@ Files changed: mytimeDevice.c Makefile README.md testCharDevice.c
 
 Sample output of ./test:
 
-KERNEL:\n
+KERNEL:__
 current_kernel_time: 1508723133 925681398
-getnstimeofday: 1508723133 921561957 \n
-USERSPACE:
+getnstimeofday: 1508723133 921561957 __
+USERSPACE:__
 gettimeofday: 1508723133 925641000
 
 KERNEL:
